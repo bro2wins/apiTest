@@ -2,8 +2,6 @@ package com.pack.testing.api;
 
 import com.pack.tesing.api.Main;
 import com.pack.tesing.api.client.SimpleClient;
-import com.pack.tesing.api.model.LoginData;
-import com.pack.tesing.api.utils.Constants;
 import io.qameta.allure.Description;
 import org.apache.http.HttpStatus;
 import org.springframework.beans.factory.annotation.Autowired;
