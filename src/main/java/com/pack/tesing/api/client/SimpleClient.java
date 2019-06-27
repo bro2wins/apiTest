@@ -1,7 +1,8 @@
-package com.pack.tesing.api.configuration;
+package com.pack.tesing.api.client;
 
 
 import com.pack.tesing.api.model.LoginData;
+import com.pack.tesing.api.model.Student;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -28,4 +29,15 @@ public interface SimpleClient {
     @Produces("application/json")
     Response test();
 
+    @Path("/student")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    Response saveStudentResponse(Student student);
+
+
+    @Path("/users/{id}")
+    @GET
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    Response getGitHubUserById(@PathParam("id") int id);
 }
