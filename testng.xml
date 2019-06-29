@@ -5,4 +5,9 @@
             <class name="com.pack.testing.api.LoginTest"/>
         </classes>
     </test>
+    <test name="UI Tests">
+        <classes>
+            <class name="com.pack.testing.ui.LoginTest"/>
+        </classes>
+    </test>
 </suite>

@@ -1,12 +1,12 @@
-package com.pack.tesing.api;
+package com.pack;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Main {
+public class Application {
 
-    public static void main(String[] arg){
-        SpringApplication.run(Main.class);
+    public static void main(String[] args){
+        SpringApplication.run(Application.class, args);
     }
 }
